@@ -23,10 +23,10 @@ export default function Cart() {
         <div className="card">
             <div className="card__top">
                 <div>
-                    <img src="./assets/nike.png" alt="..." />
-                    <h3>Your cart</h3>
+                    <img className ="card__top__logo"src="./assets/nike.png" alt="..." />
                 </div>
-                <span>${renderPrice()}</span>
+                <div className='card__title'>Your cart
+                <span className='card__title__amount'>${renderPrice()}</span></div>
             </div>
             <div className="card__body">
                 {renderCartItem()}

@@ -109,9 +109,9 @@ export default function ProductList(props) {
   return (
     <div className="card">
       <div className="card__top">
-        <img src="./assets/images/nike.png" alt="..." />
-        <h3>Our Products</h3>
+        <img className="card__top__logo"src="./assets/nike.png" alt="..." />
       </div>
+      <div className="card__title">Our Products</div>
       <div className="card__body">
         {shoes.map((item, index) => (
           <Product key={index} item={item} />

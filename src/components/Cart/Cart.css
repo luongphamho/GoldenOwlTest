@@ -1,19 +1,53 @@
-.cart{
-    margin-left: auto;
-    margin-right: auto;
-    
+.card {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  width: 22.5rem;
+  height: 37.5rem;
+  box-shadow: 0 3.2px 2.2px rgb(0 0 0 / 2%), 0 7px 5.4px rgb(0 0 0 / 3%),
+    0 12.1px 10.1px rgb(0 0 0 / 4%), 0 19.8px 18.1px rgb(0 0 0 / 4%),
+    0 34.7px 33.8px rgb(0 0 0 / 5%), 0 81px 81px rgb(0 0 0 / 7%);
+  border-radius: 1.875rem;
+  overflow: hidden;
+  padding: 0 1.75rem;
+  position: relative;
 }
-@media (min-width: 768px) {
-    .cart{
-        margin-bottom: 1.25rem;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
 
+.card:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: #f6c90e;
+  top: -20%;
+  left: -50%;
+  z-index: 0;
 }
-
 .cart__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  margin: 12px 0;
+  position: relative;
+}
+
+.card__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 16px 0;
+    position: relative;
+}
+
+.card__title__amount {
+    float: right;
+}
+
+.card__top__logo {
+  display: block;
+  width: 50px;
+}
+
+.card-body {
+    height: calc(100% - 98px);
+    position: relative;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }

@@ -12,7 +12,7 @@ export default function Product(props) {
     const index = cart.findIndex((shoe) => shoe.id === item.id);
     if (index !== -1) {
       return (
-        <button className="shop__item__button__check">
+        <button className="shop__item__button--inactive">
           <img
             src="./assets/check.png"
             alt="..."
@@ -47,12 +47,12 @@ export default function Product(props) {
       >
         <img src={item.image} alt={item.name} />
       </div>
-      <div className="shop__item__info">
-        <h1>{item.name}</h1>
-        <p>{item.description}</p>
+      <div className="shop__item__name">
+        {item.name}
       </div>
+      <div className="shop__item__description">{item.description}</div>
       <div className="shop__item__bottom">
-        <span>${item.price}</span>
+        <div className="shop__item__price">${item.price}</div>
         {renderButton()}
       </div>
     </div>
