@@ -1,15 +1,14 @@
 .card {
-  background-color: #ffffff;
-  box-sizing: border-box;
-  width: 22.5rem;
-  height: 37.5rem;
-  box-shadow: 0 3.2px 2.2px rgb(0 0 0 / 2%), 0 7px 5.4px rgb(0 0 0 / 3%),
-    0 12.1px 10.1px rgb(0 0 0 / 4%), 0 19.8px 18.1px rgb(0 0 0 / 4%),
-    0 34.7px 33.8px rgb(0 0 0 / 5%), 0 81px 81px rgb(0 0 0 / 7%);
-  border-radius: 1.875rem;
-  overflow: hidden;
-  padding: 0 1.75rem;
-  position: relative;
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 360px;
+    height: 600px;
+    box-shadow: 0 3.2px 2.2px rgb(0 0 0 / 2%), 0 7px 5.4px rgb(0 0 0 / 3%), 0 12.1px 10.1px rgb(0 0 0 / 4%), 0 19.8px 18.1px rgb(0 0 0 / 4%), 0 34.7px 33.8px rgb(0 0 0 / 5%), 0 81px 81px rgb(0 0 0 / 7%);
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 0 28px;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 .card:before {
@@ -34,6 +33,9 @@
     font-weight: 700;
     margin: 16px 0;
     position: relative;
+}
+.cart__empty__text {
+    font-size: 14px;
 }
 
 .card__title__amount {

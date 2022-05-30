@@ -6,6 +6,18 @@
 
 .cart__item__left {
     flex: 0;
+    margin-right: 34px;
+    animation: animation1 .4s ease-in-out;
+}
+
+@keyframes animation1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .cart__item__right {
@@ -35,7 +47,20 @@
 .cart__item__actions {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    animation: animation2 1s ease-in;
+}
+
+@keyframes animation2 {
+    0% {
+        opacity: 0;
+        transform: translateX(40%)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .cart__item__count {
@@ -53,6 +78,7 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 16px;
+    animation: animation2 1s ease-in;
 }
 
 .cart__item__name {
@@ -60,6 +86,7 @@
     font-weight: 700;
     line-height: 1.5;
     margin-bottom: 10px;
+    animation: animation2 1s ease-in;
 }
 .cart__count__button {
     cursor: pointer;
@@ -67,6 +94,7 @@
     height: 28px;
     line-height: 28px;
     border-radius: 100%;
+    border: none;
     background-color: #eee;
     font-size: 16px;
     font-weight: 700;
@@ -98,6 +126,7 @@
     cursor: pointer;
     transition: all .25s ease;
     border-radius: 100%;
+    border:none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,4 +136,12 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.cart__remove__button:hover {
+    background-color:#FFD700;
+}
+
+.cart__count__button:hover {
+    background-color: #DCDCDC;
 }

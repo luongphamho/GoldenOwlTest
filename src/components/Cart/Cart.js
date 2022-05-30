@@ -12,7 +12,6 @@ export default function Cart() {
         }
         return totalPrice;
     }
-    // console.log(cart)
     const renderCartItem = () => {
         if (cart.length === 0) {
             return <p className="cart__empty__text">Your cart is empty.</p>

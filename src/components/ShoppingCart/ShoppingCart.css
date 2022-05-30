@@ -1,13 +1,62 @@
-.shopping__card {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+:root {
+  --white-: #ffffff;
+  --black-: #303841;
+  --pray-: #777777;
+  --yellow-: #f6c90e;
 }
-@media (min-width: 768px) {
-    .shopping__card {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100vh;
-    }
+
+.shopping__card {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.shopping__card::before {
+  content: "";
+  position: fixed;
+  width: 400%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  background-color: var(--yellow-);
+  z-index: -100;
+  animation: animation 9s ease-in-out infinite alternate;
+}
+
+@keyframes animation {
+  0% {
+    transform: translateX(-50%) skew(0deg, -8deg);
+  }
+
+  to {
+    transform: translateX(-30%) skew(8deg, -4deg);
+  }
+}
+
+/* @media (min-width: 768px) {
+  .shopping__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+} */
+@media only screen and (max-width: 480px) {
+  .shopping__card {
+    padding: 0 8px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .shopping__card {
+    height: auto;
+    flex-direction: column;
+  }
 }

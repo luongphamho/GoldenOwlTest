@@ -56,6 +56,7 @@
     width: 46px;
     height: 46px;
     border-radius: 100%;
+    border:none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,6 +73,7 @@
     min-width: 46px;
     padding: 16px 20px;
     border-radius: 100px;
+    border:none;
     transition: all .25s ease;
     -webkit-user-select: none;
     -moz-user-select: none;
