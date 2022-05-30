@@ -28,7 +28,7 @@
     width: 90px;
     height: 90px;
     border-radius: 100%;
-    background-color: #eee;
+    background-color: #FFFFFF;
     margin-right: 34px;
     display: block;
 }
@@ -95,7 +95,7 @@
     line-height: 28px;
     border-radius: 100%;
     border: none;
-    background-color: #eee;
+    background-color: #FFFFFF;
     font-size: 16px;
     font-weight: 700;
     display: flex;
@@ -139,9 +139,9 @@
 }
 
 .cart__remove__button:hover {
-    background-color:#FFD700;
+    background-color:#F6C90E;
 }
 
 .cart__count__button:hover {
-    background-color: #DCDCDC;
+    background-color: #777777;
 }
