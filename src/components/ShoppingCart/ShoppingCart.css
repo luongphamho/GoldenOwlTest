@@ -1,0 +1,13 @@
+.shopping__card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .shopping__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+    }
+}

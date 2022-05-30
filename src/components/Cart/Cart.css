@@ -1,0 +1,19 @@
+.cart{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+@media (min-width: 768px) {
+    .cart{
+        margin-bottom: 1.25rem;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
+
+.cart__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
