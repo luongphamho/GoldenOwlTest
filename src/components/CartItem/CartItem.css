@@ -28,7 +28,7 @@
     width: 90px;
     height: 90px;
     border-radius: 100%;
-    background-color: #FFFFFF;
+    background-color: #eee;
     margin-right: 34px;
     display: block;
 }
@@ -49,6 +49,11 @@
     align-items: center;
     justify-content: space-between;
     animation: animation2 1s ease-in;
+}
+
+.delete-cart {
+    transform: scale(0);
+    transition: all 0.5s ease-in-out;
 }
 
 @keyframes animation2 {
@@ -95,7 +100,7 @@
     line-height: 28px;
     border-radius: 100%;
     border: none;
-    background-color: #FFFFFF;
+    background-color: #eee;
     font-size: 16px;
     font-weight: 700;
     display: flex;
@@ -139,7 +144,7 @@
 }
 
 .cart__remove__button:hover {
-    background-color:#F6C90E;
+    background-color:#f0d04efc;
 }
 
 .cart__count__button:hover {
